@@ -1,18 +1,19 @@
 import React from "react";
+import NavBar from "./navbar.jsx";
+import ContainerCards from "./containerCards.jsx";
+import Footer from "./footer.jsx";
+import Jumbotron  from './Jumbotron.jsx';
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
-const Home =()=>{
-	return(
-		<>
-			<navbar></navbar>
-			<footer></footer>
-			<cards></cards>
-			<images></images>
-		</>
-	)
-}
+const Home = () => {
+  return (
+    <>
+      <NavBar />
+      <Jumbotron />
+      <ContainerCards/>
+      <Footer/>
+    </>
+  );
+};
 
 export default Home;
